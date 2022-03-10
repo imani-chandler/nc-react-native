@@ -14,7 +14,7 @@ import SafeAreaView from 'react-native-safe-area-view';
 import { connect } from 'react-redux';
 import { fetchCampsites, fetchComments, fetchPromotions, fetchPartners } from '../redux/ActionCreators';
 import Reservation from './ReservationComponent';
-import Favoirtes from './FavoritesComponent';
+import Favorites from './FavoritesComponent';
 
 const mapDispatchToProps = {
     fetchCampsites,
@@ -102,7 +102,7 @@ const ReservationNavigator = createStackNavigator(
 
 const FavoritesNavigator = createStackNavigator(
     {
-        Favorites: { screen: Favoirtes }
+        Favorites: { screen: Favorites }
     },
     {
         defaultNavigationOptions: ({navigation}) => ({
